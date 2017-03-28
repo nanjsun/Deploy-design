@@ -4,11 +4,7 @@
 #include <string.h>
 //你要完成的功能总入口
 
-
-void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
-{
-
-	int *cost_all;
+int *cost_all;
 	int *cost_server;
 	int *cost_flow;
 	//	int shortestcost[50][50];//this array will be update later .just for test
@@ -26,6 +22,10 @@ void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
 	Graph *GM;//GM is a pointer which point to a Graph type struct.
 
 	GM = (Graph *) malloc(sizeof(Graph));
+void deploy_server(char * topo[MAX_EDGE_NUM], int line_num,char * filename)
+{
+
+	
 
 	if(GM==NULL)
 	{
